@@ -41,14 +41,19 @@ p {
 	height: 35px;
 }
 
-.description h1 {
-	margin-top: 185px;
+#description {
+	padding-top:185px;
+	padding-bottom: 175px;
+}
+
+
+.description-title {
 	margin-bottom:35px;
 	font-size: 55px;
 	text-align: center;
 }
 
-.description p {
+.description-subtitle {
 	margin-top:0px;
 	font-size:19px;
 	margin-bottom:36px;
@@ -58,24 +63,22 @@ p {
 
 #nav-links {
 	margin-top:0;
-	margin-bottom: 175px;
 	text-align: center;
 }
 
-#nav-links ul li {
+.link {
 	display: inline;
 	list-style:none;
-
-
 }
 
-#nav-links ul li a {
+.link-order, .link-inf {
 	text-decoration: none;
 	color:black;
 	font-size:21px;
 	font-weight: bold;
 	margin-right: 6px;
 	margin-left: 6px;
+	cursor: pointer;
 }
 
 .link-order {
@@ -83,17 +86,13 @@ p {
 	background:#f5c330;
 	border-radius: 5px;
 	padding: 6px 31px 6px 31px
-	
-
-
 }
 
 .link-inf {
-
 	border: 1px solid black;
 	border-radius: 5px;
-	padding: 20px 52px 20px 52px
-
+	padding: 20px 52px 20px 52px;
+	background: transparent;
 }
 
 
@@ -101,32 +100,23 @@ p {
 	display: inline;
 }
 
-#services h2 {
+.services-title {
 	font-size: 35px;
 	margin-bottom:90px;
 	text-align: center;
 }
 
-#services div {
+.blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
 	margin-bottom: 30px;
-	text-align: center;
 }
-
-
-#services div h3 {
-	font-size:23px;
-	text-align: center;
-}
-
-#services div p {
-	text-align: center;
-	font-size:18px;
-}
-
 
 .block {
-	width: 33%;
-	display: inline-block;
+
+    text-align: center;
 }
 
 .block:first-child{
@@ -140,9 +130,21 @@ p {
 	float: right;
 }
 
-.block img {
+
+.block-title {
+	font-size:23px;
+	text-align: center;
+}
+
+.block-subtitle {
+	text-align: center;
+	font-size:18px;
+}
+
+.block-img {
 	display: block;
 	margin:0 auto;
+	object-fit: cover;
 }
 
 .link-outside {
@@ -158,40 +160,25 @@ p {
  margin-bottom: 46px;
 }
 
-#advantages h2 {
+.advantages-title {
 	font-size: 35px;
 	margin-bottom:50px;
 	text-align: center;
 }
 
-#advantages div ul li h3 {
+.phone-item-title {
  font-size: 22px
 }
 
-#advantages div ul li p {
+.phone-item-subtitle {
  color: #b2b2b2;
  font-size: 17px
 }
 
 .phone {
-	display: inline-block;
-}
-
-.phone:first-child {
-float: left;
-width:42%;
-padding: 0 0 0 380px;
-}
-
-.phone:nth-child(2) {
-
-width:15%;
-}
-
-.phone:last-child {
-float: right;
-width:43%;
-padding: 0 0px 0 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
