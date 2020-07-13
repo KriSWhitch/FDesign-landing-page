@@ -6,8 +6,10 @@
   clear: both;
   height: 0;
 }
+
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
+
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
@@ -28,19 +30,15 @@ p {
 }
 
 .site-header {
-	height: 141px;
-
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.fig {
-	text-align: center;
-}
-	
-
-.description {
-
-	
-
+.header-logo {
+	width: 142px;
+	height: 35px;
 }
 
 .description h1 {
@@ -196,43 +194,27 @@ width:43%;
 padding: 0 0px 0 80px;
 }
 
-.phone-img {
-	
+
+#footer {
+	height: 80px;
+}
+
+.footer-description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-logo {
+	width: 142px;
+	height: 35px;
+	margin: 0 50px;
 }
 
 
-footer {
-	margin-top: 46px;
-}
-
-#blocks2 p {
+.footer-subtitle  {
 	color: #b2b2b2;
 	text-align: center;	
 }
 
-.block2 {
-
-	display: inline-block;
-}
-
-.block2:first-child{
-	float:left;
-	padding: 10px 0 0 300px;
-	width: 42%;
-}
-
-.block2:nth-child(2){
-	width: 15%;
-}
-.block2:last-child{
-	float: right;
-	width: 42%;
-	padding: 7px 300px 0 0;
-}
-
-.block2 img {
-	
-	display: block;
-	margin:0 auto;
-}
 
